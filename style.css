@@ -1,0 +1,380 @@
+/* 
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+- Colors:
+Main color
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100% !important;
+}
+
+body {
+    font-family: "Sarabun", sans-serif !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+}
+
+p {
+    color: #4d4d4d;
+    margin-bottom: 0;
+}
+
+.primary-header, .secondary-header, .tertiary-header {
+    font-family: "Taviraj", serif;
+}
+
+.hero-section {
+    padding: 7.2rem 0;
+    /* background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.594), rgba(26, 26, 26, 0.724), rgba(77, 77, 77, 0.705)),
+    url(./asset/img/bg-img-hero.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.gradient-background {
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.594), rgba(26, 26, 26, 0.724), rgba(77, 77, 77, 0.705)),
+    url(./asset/img/bg-img-hero.jpg);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.hero-section > .container {
+    text-align: center;
+}
+
+.primary-header {
+    font-size: 7.4rem;
+    color: #E5E5CB;
+}
+
+.web-dev-p {
+     color: #fff;
+    font-size: 3.6rem;
+    font-style: italic;
+    font-style: 300;
+    line-height: 1.2;
+}
+
+.about-me-section {
+    padding: 7.2rem 0;
+}
+
+.profile {
+    text-align: center;
+}
+
+.portfolio-img {
+    display: inline-block;
+    max-width: 80%;
+    background-color: rgba(229, 229, 203, 0.443);
+    border-radius: 50%;
+}
+
+.portfolio-name {
+    color: #4d4d4d;
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 1.4rem 0 .6rem 0;
+}
+
+.profile-p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.additional-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 200;
+}
+
+.portfolio-info {
+    display: flex;
+    gap: .5rem;
+}
+
+.portfolio-info .bold {
+    font-weight: 500;
+}
+
+.portfolio-tertiary-header {
+    color: #4d4d4d;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-bottom: 1.8rem;
+}
+
+.skill-header, .hobby-header {
+    color: #666666;
+    font-size: 1.2rem;
+}
+
+.skills {
+    padding-bottom: 2.4rem;
+    align-items: start;
+}
+
+.hobbies {
+    align-items: start;
+}
+
+
+.skill-description, .hobby-description {
+    font-size: .8rem;
+}
+
+.connect-section {
+    padding: 7.4rem 0;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.703), rgba(26, 26, 26, 0.772)),
+    url(./asset/img/bg-img-contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.lets-connect {
+    color: #fff;
+    background-color: rgba(234, 234, 213, 0.498);
+    max-width: 50%;
+    padding: 4.8rem 2.4rem;
+    margin: auto auto;
+    text-align: center;
+}
+
+.lets-connect > .tertiary-header {
+    color: #E5E5CB;
+   font-size: 2.4rem;
+}
+
+.lets-connect .tertiary-header + .contact-p {
+    color: inherit;
+    font-size: 1.4rem;
+    margin-bottom: 1.4rem;
+}
+
+.connect-btn {
+    background-color: #000;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+.connect-btn:hover {
+    background-color: #444;
+}
+
+.connect-btn > a:link, .connect-btn > a:visited {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-section > .container {
+    padding: 1.4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-section > .container > p {
+    font-size: .8rem;
+    margin-bottom: 0;
+}
+
+.social-links > a:link, 
+.social-links > a:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #4d4d4d6f;
+    font-size: 1.4rem;
+}
+
+.social-links > a:hover, 
+.social-links > a:active {
+    color: #4d4d4d;
+}
+
+
+/* MEDIA QUERY */
+
+/* XXL 1400 upwaed */
+
+@media (max-width: 1400px) {
+    html {
+        font-size: 100%;
+    }
+}
+
+/* XL 1200 t0 1400 */
+
+@media (max-width: 1200px) and (max-width: 1400px) {
+    
+}
+
+/* Lg 992 to 1200 */
+
+@media (max-width: 992px) and (max-width: 1200px) {
+    .about-me-section .container {
+        padding: 0;
+    }    
+
+    .about-me-section .container > .container > .row {
+       gap: 2rem;
+    }
+
+    .skills-hobbies {
+        padding: 3rem 0 0 0;
+    }
+
+    .portfolio-name {
+        font-size: 1.8rem;
+        margin: 1.6rem 0;
+    }
+
+    .profile-p {
+        font-size: 1.2rem;
+        padding: 0 1.2rem;
+    }
+
+    .portfolio-info {
+        font-size: 1rem;
+    }
+}
+
+/* md 768 to 992 */
+
+@media (max-width: 768px) and (max-width: 992px) {
+
+    .primary-header {
+        font-size: 5.2rem;
+    }
+
+    .web-dev-p {
+        font-size: 2.4rem;
+    }
+
+    .portfolio-img {
+        max-width: 50%;
+    }
+
+    .skills-hobbies {
+        padding: 3rem 3.2rem 0 3.2rem;
+    }
+
+    .skills-hobbies .skillpadding {
+        padding-bottom: 3.2rem;
+    }
+
+    .lets-connect {
+        max-width: 80%;
+    }
+}
+
+/* sm 576 to 768 */
+
+@media (max-width: 576px) and (max-width: 768px) {
+
+    .about-me-section .container {
+        padding: 0 2.4rem;
+    }
+
+    .profile-p {
+        font-size: 1rem;
+        padding: 0 3.2rem;
+    }
+
+    .skills, .hobbies {
+        padding: 0 2.4rem;
+    }
+
+    .skills > .skill, .hobbies > .hobby {
+        padding-bottom: 1.2rem;
+    }
+
+    .skills > .skill:last-child, .hobbies > .hobby:last-child {
+        padding-bottom: 0;
+    }
+
+    .skill-header, .hobby-header {
+        font-size: 1.4rem;
+    }
+
+    .skill-description, .hobby-description {
+        font-size: 1rem;
+    }
+}
+
+/* Extra small > 576 */
+
+@media (max-width: 576px) {
+    .primary-header {
+        font-size: 4rem;
+    }
+
+    .web-dev-p {
+        font-size: 1.8rem;
+    }
+
+    .portfolio-info {
+        font-size: .6rem;
+    }
+
+    .profile-p {
+        font-size: .8rem;
+    }
+    
+    .skills, .hobbies {
+        padding: 0;
+    }
+
+    .skill-description, .hobby-description {
+        font-size: .8rem;
+    }
+
+    .lets-connect > .tertiary-header {
+       font-size: 1.6rem;
+    }
+
+    .lets-connect .tertiary-header + .contact-p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer-section > .container {
+        padding: 1.4rem 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
